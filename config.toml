@@ -1,8 +1,28 @@
-theme = "everblush"
+theme = "base16_transparent"
 
 [editor]
 line-number = "relative"
 mouse = true
+cursorline = true
+true-color = true
+scrolloff = 8
+scroll-lines = 1
+color-modes = true
+auto-save = false
+bufferline = "multiple"
+rulers = [120]
+auto-pairs = true
+completion-trigger-len = 1
+idle-timeout = 80
+
+[editor.gutters.line-numbers]
+min-width = 1
+
+[editor.gutters]
+layout = ["diff", "diagnostics", "line-numbers", "spacer"]
+
+[editor.search]
+smart-case = true
 
 [editor.cursor-shape]
 insert = "bar"
@@ -11,6 +31,67 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
+
+[editor.whitespace.render]
+space = "none"
+tab = "all"
+newline = "none"
+
+[editor.whitespace.characters]
+# space = "·"
+nbsp = "⍽"
+tab = "▏"
+newline = "⏎"
+# tabpad = "·"
+
+[editor.indent-guides]
+render = true
+character = "▏" # Some characters that work well: "▏", "╎", "┆", "┊", "⸽"
+# skip-levels = 1
+
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+
+
+[editor.statusline]
+# left = [
+#   "mode",
+#   "spacer",
+#   "separator",
+#   "spacer",
+#   "spinner",
+#   "position-percentage",
+#   "spacer",
+#   "total-line-numbers",
+# ]
+# center = ["file-name", "version-control", "spacer", "diagnostics"]
+# right = ["selections", "position", "file-type", "spacer"]
+left = [
+  "mode",
+  "spinner",
+  "file-name",
+  "file-type",
+  "total-line-numbers",
+  "file-encoding",
+]
+center = []
+right = [
+  "selections",
+  "primary-selection-length",
+  "position",
+  "position-percentage",
+  "spacer",
+  "diagnostics",
+  "workspace-diagnostics",
+  "version-control",
+]
+separator = "│"
+
+
+
 
 
 [keys.normal]
