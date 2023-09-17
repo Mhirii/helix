@@ -10,3 +10,8 @@ name = "rust"
 
 [language-server.rust-analyzer.config.check]
 command = "clippy"
+
+# TypeScript
+[[language]]
+name = "typescript"
+file-types = ["ts", "jsx"]
